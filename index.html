@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <p class="header__welcome"><img src="settings.png" alt=""> <span>Hello, Lahari,<span id="welcomeTime" class="differ"> Good afternoon!</span></span> </p>
+        <p class="header__time">Time: <span id="time-now">03:24:04</span> </p>
+    </header>
+    <main class="todo-list">
+        <div class="todo-list__header">
+            <h1>To Do List</h1> 
+            <img src="check.png" alt="">
+        </div>
+        <div class="todo-list__add">
+            <input id="todo-input" type="text" placeholder="Add new task">
+            <button id="add">Add</button>
+        </div>
+        <div class="todo-list__edit" id="todo-list__edit">
+            <input id="edit-input" type="text" placeholder="Edit current task">
+            <span class="close" id="close"><img src="close.png" alt=""></span>
+            <button id="edit">Edit</button>
+        </div>
+        <div class="todo-list__todos" id="todos">
+            <!-- Content Come From Javascript -->
+        </div>
+        <div class="bottom-space"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
